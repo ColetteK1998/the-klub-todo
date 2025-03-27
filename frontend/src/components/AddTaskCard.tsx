@@ -88,9 +88,9 @@ const AddTaskCard: React.FC<AddTaskCardProps> = ({
       >
         <IconWrapper
           key={isAddTaskActive ? "submit-icon" : "add-icon"}
-          initial={{ rotate: -90, scale: 0, opacity: 0 }}
-          animate={{ rotate: 0, scale: 1, opacity: 1 }}
-          exit={{ rotate: 90, scale: 0, opacity: 0 }}
+          initial={{ rotate: -90, opacity: 0 }}
+          animate={{ rotate: 0, opacity: 1 }}
+          exit={{ rotate: 90, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
           {isAddTaskActive ? <SubmitIcon /> : <AddIcon />}
