@@ -43,7 +43,7 @@ A fully deployed version of the app can be found here: https://the-klub-todo.ver
 
 ### Full App
 
-1. Navigate to the route folder:
+1. Navigate to the root folder:
 
 2. Run the build command
    ```sh
