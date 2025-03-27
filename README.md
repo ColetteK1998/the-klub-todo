@@ -1,6 +1,8 @@
-# Project Title
+# theKlub - TODO App
 
 A full-stack todo app built with React & Vite. Backend built with Node.js, Express & Prisma. Postgres Database hosted on Supabase.
+
+A fully deployed version of the app can be found here: https://the-klub-todo.vercel.app/
 
 ## Installation
 
@@ -18,9 +20,11 @@ A full-stack todo app built with React & Vite. Backend built with Node.js, Expre
 2. Install dependencies:
    ```sh
    npm install
+   ```
 3. Start the frontend server
    ```sh
    npm run dev
+   ```
 
 ### Backend
 
@@ -31,9 +35,11 @@ A full-stack todo app built with React & Vite. Backend built with Node.js, Expre
 2. Install dependencies:
    ```sh
    npm install
+   ```
 3. Start the backend server
    ```sh
    npm start
+   ```
 
 ### Environment variables
 
