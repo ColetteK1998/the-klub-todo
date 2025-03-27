@@ -41,6 +41,19 @@ A fully deployed version of the app can be found here: https://the-klub-todo.ver
    npm start
    ```
 
+### Full App
+
+1. Navigate to the route folder:
+
+2. Run the build command
+   ```sh
+   npm run build
+   ```
+3. Start the app
+   ```sh
+   npm run dev
+   ```
+
 ### Environment variables
 
 - Both frontend and backend require `.env` files, see `/frontend/.env.example` and `/backend/.env.example`
