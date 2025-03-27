@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "ts-node src/server.ts",
-    "build": "npm install && tsc",
-    "start": "npm run build && node dist/server.js",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "seed": "ts-node prisma/seed.ts",
     "postinstall": "prisma generate"
   },
