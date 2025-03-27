@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-todo-app",
+  "version": "1.0.0",
+  "description": "A fullstack app with React frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": "22.11.0"
+  },
+  "heroku": {
+    "buildpacks": [
+      "heroku/nodejs",
+      "https://github.com/mars/create-react-app-buildpack"
+    ]
+  }
+}
