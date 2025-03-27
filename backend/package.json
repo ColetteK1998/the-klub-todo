@@ -8,9 +8,10 @@
   },
   "scripts": {
     "dev": "ts-node src/server.ts",
-    "build": "tsc",
+    "build": "npm install && tsc",
     "start": "npm run build && node dist/server.js",
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +27,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
-    "@types/node": "^22.13.13",
+    "@types/node": "^22.13.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
