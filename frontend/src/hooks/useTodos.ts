@@ -64,8 +64,8 @@ export const useTodoList = () => {
         ["todos"],
         (oldTodos?: Todo[]) =>
           oldTodos?.map((todo) =>
-            todo.id === id ? { ...todo, ...data } : todo
-          ) || []
+            todo.id === id ? { ...todo, ...data } : todo,
+          ) || [],
       );
 
       return { previousTodos };
@@ -91,7 +91,7 @@ export const useTodoList = () => {
 
       queryClient.setQueryData(
         ["todos"],
-        (oldTodos?: Todo[]) => oldTodos?.filter((todo) => todo.id !== id) || []
+        (oldTodos?: Todo[]) => oldTodos?.filter((todo) => todo.id !== id) || [],
       );
 
       return { previousTodos };

@@ -31,7 +31,7 @@ export const createTodo = async (data: { title?: string }) => {
 // Update a todo by ID
 export const updateTodo = async (
   id: number,
-  data: { title?: string; completed?: boolean }
+  data: { title?: string; completed?: boolean },
 ) => {
   const response = await fetch(`${API_URL}/todos/${id}`, {
     method: "PUT",

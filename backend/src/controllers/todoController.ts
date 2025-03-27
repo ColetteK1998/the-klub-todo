@@ -10,7 +10,7 @@ export const getAllTodos = async (): Promise<Todo[]> => {
 // Update a todo
 export const updateTodo = async (
   id: number,
-  data: Partial<Todo>
+  data: Partial<Todo>,
 ): Promise<Todo | null> => {
   return await prismaClient.todo.update({
     where: { id },
